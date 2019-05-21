@@ -33,3 +33,24 @@ body {
     height: 80px;
 
 }
+
+.account-menu {
+    background-color: #ffcc33;
+	list-style-position: inside;
+	position: fixed;
+	top: 5px;
+	right: 50px;
+	width: 200px;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#products a {
+text-decoration: none;
+	color: black;
+}
+
+#products a:hover {
+text-decoration: none;
+text-decoration:underline;
+}
