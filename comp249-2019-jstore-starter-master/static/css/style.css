@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
 html {
-    background-color: blue;
+  font-family: 'Nanum Gothic', sans-serif;
+  background-image: url("blue_background2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 body {
@@ -10,8 +15,8 @@ body {
     width: 80%;
     margin: auto;
     margin-bottom: 0;
-    background-color: pink;
     padding: 20px;
+    background-color:  #007a99  ;
 }
 
 #message {
@@ -25,17 +30,14 @@ body {
 }
 
 .banner {
-    font-family: cursive, sans-serif;
     text-align: center;
-    background-color: #ffcc33;
     margin: 0;
     padding: 10px;
-    height: 80px;
-
+    height: 90%;
 }
 
-.account-menu {
-    background-color: #ffcc33;
+.cart-menu {
+    background-color: #007a99;
 	list-style-position: inside;
 	position: fixed;
 	top: 5px;
@@ -43,6 +45,11 @@ body {
 	width: 200px;
 	list-style-type: none;
 	padding-left: 0;
+	z-index:1;
+}
+
+#products td, th {
+  border: 1px solid black;
 }
 
 #products a {
@@ -53,4 +60,39 @@ text-decoration: none;
 #products a:hover {
 text-decoration: none;
 text-decoration:underline;
+}
+
+#form li {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#form fieldset {
+	border: none;
+}
+
+.container{
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+.left-half {
+    grid-column:1;
+}
+
+.right-half {
+    grid-column:3;
+}
+
+
+#product_Expansion_img img {
+      max-width: 700px;
+}
+
+#product_Expansion_description p{
+          max-width: 500px;
+}
+#product_Expansion_inventory p{
+    margin-right: 200px;
+    display: inline-block;
 }

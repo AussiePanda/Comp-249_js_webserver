@@ -19,7 +19,6 @@
            success: function(data) {
                 /* store data as a property of this object */
                 self.products = data
-                /* trigger the data changed event */
            }
         })
 
@@ -44,7 +43,7 @@
             return this.products.products
         }
     }
-
+    // return a specific product and its information
     SW.prototype.getProductsinfo = function(Id) {
         let results = this.getProducts()
         if (results === []) {
@@ -57,7 +56,7 @@
             }
         }
     }
-
+    // return a list of the cart
     SW.prototype.getCart = function() {
         if (this.cart === []) {
             return []
